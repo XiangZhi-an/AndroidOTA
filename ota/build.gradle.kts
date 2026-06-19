@@ -19,6 +19,11 @@ android {
         targetCompatibility = JavaVersion.VERSION_11
     }
 
+    publishing {
+        singleVariant("release") {
+            withSourcesJar()
+        }
+    }
 }
 
 afterEvaluate {
